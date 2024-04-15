@@ -30,7 +30,7 @@ h1, h2, h3 {
 
 /* Header */
 header {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgb(255, 255, 255);
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -43,9 +43,11 @@ header {
 
 header a {
     text-decoration: none;
-    color: inherit;
+    color: black;
 }
-
+#logo h2{
+    color: black;
+}
 #menu { 
     font-size: 110%;
     letter-spacing: 4px;
@@ -53,7 +55,7 @@ header a {
 }
 
 #menu li {
-    color: #f9f9f9;
+    color: b ;
 }
 
 .active {
@@ -63,7 +65,7 @@ header a {
 /* Navbar */
 nav { 
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgb(255, 255, 255);
     width: 100%;
     left: 0;
     padding: 0 1rem;
@@ -84,7 +86,7 @@ nav {
 
 .nav-toggle-label { 
     font-size: 2rem;
-    color: #f9f9f9;
+    color: #000000;
 }
 
 /* Main content */
