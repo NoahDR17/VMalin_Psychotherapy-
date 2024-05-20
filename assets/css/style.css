@@ -1,5 +1,6 @@
 /* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 /* General styling rules */
 * {
     padding: 0;
@@ -7,9 +8,33 @@
     box-sizing: border-box;
 }
 
+/* Multi Purpose Styles */
+.centerAlign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.textCenterAlign {
+    text-align: center;
+}
+
+.padding {
+    padding: 15px;
+}
+
 /* General styles */
 body {
-    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     /* Generic project styles */
@@ -17,7 +42,9 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -45,17 +72,19 @@ header a {
     text-decoration: none;
     color: black;
 }
-#logo h2{
+
+#logo h2 {
     color: black;
 }
-#menu { 
+
+#menu {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
 }
 
 #menu li {
-    color: black ;
+    color: black;
     margin-bottom: 5px;
 
 }
@@ -65,7 +94,7 @@ header a {
 }
 
 /* Navbar */
-nav { 
+nav {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.875);
     width: 100%;
@@ -78,7 +107,7 @@ nav {
 }
 
 /* Nav Toggle */
-#nav-toggle:checked~nav { 
+#nav-toggle:checked~nav {
     display: block;
 }
 
@@ -86,7 +115,7 @@ nav {
     display: none;
 }
 
-.nav-toggle-label { 
+.nav-toggle-label {
     font-size: 2rem;
     color: #000000;
 }
@@ -102,42 +131,134 @@ main {
 
 /* Hero Section */
 
-#hero { 
+#hero {
     width: 100%;
-    height: 95vh;
+    height: 90vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
         url(../media/hero.jpg);
     background-size: cover;
-    background-position: center;    
+    background-position: center;
     position: relative;
+}
+
+#header-title {
+    justify-content: center;
+    height: 90%;
+    font-size: 1.5rem;
+}
+
+/* About section */
+#about {
+    background-color: #045649;
+}
+
+#aboutContainerOne {
+    width: 100%;
+    color: #f9f9f9;
+    padding: 10px;
+}
+
+#aboutContainerOne p {
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+#link-container {
+    width: 100%;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+
+#learn-more {
+    width: 125px;
+    height: 75px;
+    background-color: transparent;
+    margin-right: 15px;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+#faq {
+    width: 125px;
+    height: 75px;
+    background-color: transparent;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+/* councilling */
+#councilling-offered {
+    justify-content: space-evenly;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+#active {
+    font-size: 1.25rem;
+    color: #045649;
+}
+/* in person */
+#location {
+    display: flex;
+    flex-direction: column;
+}
+
+#header-container h2 {
+    color: #045649;
+}
+
+#address-h3 {
+    color: #000000;
+}
+
+#address-p {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+#img-container {
+    width: 100%;
+    padding: 25px;
+}
+
+#location-img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 85%;
+}
+#contact-info {
+    padding-bottom: 15px;
 }
 /* Tablets */
 @media screen and (min-width: 768px) {
- /* Header */
- nav {
-    display: block;
-    position: relative;
-    box-shadow: none;
-    width: fit-content;
-    padding-right: 1rem;
-    background-color: rgba(0, 0, 0, 0);
-}
 
-#menu {
-    display: flex;
-}
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+        background-color: rgba(0, 0, 0, 0);
+    }
 
-#menu > li {
-    padding-left: 1rem;
-    font-size: 1.25rem;
+    #menu {
+        display: flex;
+    }
 
-}
+    #menu>li {
+        padding-left: 1rem;
+        font-size: 1.25rem;
 
-.nav-toggle-label {
-    display: none;
-}
+    }
 
-#logo {
-    line-height: 75px;
-}
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        line-height: 75px;
+    }
 }
