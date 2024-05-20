@@ -227,9 +227,29 @@ main {
     flex-wrap: wrap;
     flex-grow: 1;
     width: 85%;
+    border-radius: 25px;
 }
 #contact-info {
     padding-bottom: 15px;
+}
+/* online */ 
+#first-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#header-online h2 { 
+    color: #045649;
+}
+#img-online {
+    display: flex;
+}
+#img-online img {
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 15px;
+    border-radius: 50px;
 }
 /* Tablets */
 @media screen and (min-width: 768px) {
@@ -260,5 +280,24 @@ main {
 
     #logo {
         line-height: 75px;
+    }
+    /* online councilling */ 
+    #first-section {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    #header-online {
+        width: 50%;
+    }
+    #header-online h2 { 
+        color: #045649;
+    }
+    #img-online {
+        width: 50%;
+    }
+    #img-online img {
+        flex-wrap: wrap;
+        width: 95%;
     }
 }
