@@ -422,13 +422,11 @@ th {
     /* online councilling */
     #first-section {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
+        align-items: center;
     }
 
-    #header-online {
-        width: 50%;
-    }
 
     #header-online h2 {
         color: #045649;
