@@ -149,7 +149,7 @@ main {
 
 /* About section */
 #about {
-    background-color: #045649;
+    background-color: #3a3a3a;
 }
 
 #aboutContainerOne {
@@ -365,7 +365,28 @@ th {
     background-color: #f2f2f2;
 }
 
-/* dropdown toggle */
+/* about page external */
+.about-title {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0rem;
+    flex-direction: column;
+    width: 100%;
+}
+.about-title h1 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    color: #000;
+}
+.about-title h3 {
+    font-size: 1.25rem;
+    margin-top: 20px;
+    color: #000;
+}
+#victoria-img {
+    width: 50%;
+    border-radius: 30px;
+}
 
 /* Tablets */
 @media screen and (min-width: 768px) {
@@ -483,4 +504,32 @@ th {
             transform: translateY(0px);
         }
     }
+
+    /* about external */ 
+    /* about page external */
+.about-title {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0rem;
+    flex-direction: column;
+    width: 100%;
+}
+.about-title h1 {
+    font-size: 2.75rem;
+    margin-top: 45px;
+    color: #000;
+}
+.about-title h3 {
+    font-size: 3rem;
+    margin-top: 20px;
+    color: #045649;
+}
+
+.about-title p {
+    font-size: 2rem;
+}
+    #victoria-img {
+        width: 25%;
+    }
+
 }
