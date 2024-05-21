@@ -188,16 +188,98 @@ main {
     border: 1px solid white;
 }
 
+#faq-dropdown-questions {
+    min-height: 100vh;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #000;
+    padding-bottom: 15px;
+    border-radius: 15px;
+}
+
+#faq-dropdown-questions p {
+    color: #fff;
+}
+
+.title {
+    font-size: 2rem;
+    margin: 2rem 0rem;
+}
+
+.faq {
+    max-width: 700px;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #f2f2f2;
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.question h3 {
+    font-size: 1rem;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.answer p {
+    padding-top: 1rem;
+    padding: 10px;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.answer li {
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.faq.active .answer {
+    max-height: 1000px;
+    animation: fade 1s ease-in-out;
+}
+.faq.active svg {
+    transform: rotate(180deg);
+}
+svg {
+    transform: transform 0.5s ease-in;
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 /* councilling */
 #councilling-offered {
     justify-content: space-evenly;
     padding-top: 10px;
     margin-bottom: 10px;
 }
+
 #active {
     font-size: 1.25rem;
     color: #045649;
 }
+
 /* in person */
 #location {
     display: flex;
@@ -229,49 +311,60 @@ main {
     width: 85%;
     border-radius: 25px;
 }
+
 #contact-info {
     padding-bottom: 15px;
 }
-/* online */ 
+
+/* online */
 #first-section {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-#header-online h2 { 
+#header-online h2 {
     color: #045649;
 }
+
 #img-online {
     display: flex;
 }
+
 #img-online img {
     flex-wrap: wrap;
     width: 100%;
     padding: 15px;
     border-radius: 50px;
 }
+
 /* faq */
 #faq-header {
     font-size: 2rem;
     color: #045649;
 }
-#availability-text-container h3{
+
+#availability-text-container h3 {
     color: #000000;
 }
+
 /* table */
 table {
     width: 100%;
     border-collapse: collapse;
 }
-th, td {
+
+th,
+td {
     border: 1px solid #000;
     padding: 8px;
     text-align: center;
 }
+
 th {
     background-color: #f2f2f2;
 }
+
 /* dropdown toggle */
 
 /* Tablets */
@@ -304,23 +397,90 @@ th {
     #logo {
         line-height: 75px;
     }
-    /* online councilling */ 
+
+    /* online councilling */
     #first-section {
         display: flex;
         flex-direction: row;
         width: 100%;
     }
+
     #header-online {
         width: 50%;
     }
-    #header-online h2 { 
+
+    #header-online h2 {
         color: #045649;
     }
+
     #img-online {
         width: 50%;
     }
+
     #img-online img {
         flex-wrap: wrap;
         width: 95%;
+    }
+    .title {
+        font-size: 3rem;
+        margin: 2rem 0rem;
+    }
+    
+    .faq {
+        max-width: 700px;
+        margin-top: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid #f2f2f2;
+        cursor: pointer;
+    }
+    
+    .question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .question h3 {
+        font-size: 1.8rem;
+    }
+    
+    .answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1.4s ease;
+    }
+    
+    .answer p {
+        padding-top: 1rem;
+        line-height: 1.6;
+        font-size: 1.4rem;
+    }
+    
+    .answer li {
+        padding-top: 1rem;
+        line-height: 1.6;
+        font-size: 1.4rem;
+        color: #fff;
+    }
+    
+    .faq.active .answer {
+        max-height: 1000px;
+        animation: fade 1s ease-in-out;
+    }
+    .faq.active svg {
+        transform: rotate(180deg);
+    }
+    svg {
+        transform: transform 0.5s ease-in;
+    }
+    @keyframes fade {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
     }
 }
