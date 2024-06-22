@@ -57,7 +57,7 @@ h3 {
 
 /* Header */
 header {
-    background-color: rgba(255, 255, 255, 0.875);
+    background-color: #197371;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -70,11 +70,11 @@ header {
 
 header a {
     text-decoration: none;
-    color: black;
+    color: #f6fcef;
 }
 
 #logo h2 {
-    color: black;
+    color: #f6fcef;
 }
 
 #menu {
@@ -84,7 +84,7 @@ header a {
 }
 
 #menu li {
-    color: black;
+    color: #f6fcef;
     margin-bottom: 5px;
 
 }
@@ -96,7 +96,7 @@ header a {
 /* Navbar */
 nav {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.875);
+    background-color: #197371;
     width: 100%;
     left: 0;
     padding: 0 1rem;
@@ -117,7 +117,7 @@ nav {
 
 .nav-toggle-label {
     font-size: 2rem;
-    color: #000000;
+    color: #f6fcef;
 }
 
 /* Main content */
@@ -127,6 +127,8 @@ main {
     /* Enable flex properties for child elements */
     display: flex;
     flex-direction: column;
+
+    background-color: #f6fcef;
 }
 
 /* Hero Section */
@@ -149,12 +151,15 @@ main {
 
 /* About section */
 #about {
-    background-color: #3a3a3a;
+    background-color: #f6fcef;
+}
+#about h2 {
+    color: #1d7f8a;
 }
 
 #aboutContainerOne {
     width: 100%;
-    color: #f9f9f9;
+    color: #0f474d;
     padding: 10px;
 }
 
@@ -171,21 +176,108 @@ main {
 
 #learn-more {
     width: 125px;
-    height: 75px;
-    background-color: transparent;
+    height: 65px;
+    background-color: #25a5a3;
     margin-right: 15px;
     justify-content: space-evenly;
     border-radius: 10px;
     border: 1px solid white;
+    color: #fff;
 }
+
+/* Counselling Offered */
+#councilling {
+    background-color: #f6fcef;
+}
+#header-container h2 {
+    color: #1d7f8a;
+}
+
+
+/* councilling */
+#councilling-offered {
+    justify-content: space-evenly;
+    padding-top: 10px;
+    background-color: #f6fcef;
+}
+
+#active {
+    font-size: 1.25rem;
+    color: #1d7f8a;
+}
+
+/* in person */
+#location {
+    display: flex;
+    flex-direction: column;
+}
+
+#header-container h2 {
+    color: #1d7f8a;
+}
+
+#address-h3 {
+    color: #0f474d;
+}
+
+#address-p {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #0f474d; 
+}
+
+#img-container {
+    width: 100%;
+    padding: 25px;
+}
+
+#location-img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 85%;
+    border-radius: 25px;
+}
+
+#contact-info {
+    padding-bottom: 15px;
+}
+
+/* online */
+#first-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f6fcef;
+}
+
+#header-online h2 {
+    color: #1d7f8a;
+}
+
+#img-online {
+    display: flex;
+}
+
+#img-online img {
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 15px;
+    border-radius: 50px;
+}
+#second-section {
+    background-color: #f6fcef;
+}
+/* FAQ */
 
 #faq {
     width: 125px;
-    height: 75px;
-    background-color: transparent;
+    height: 65px;
+    background-color: #25a5a3;
     justify-content: space-evenly;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 1px solid white;
+    color: #fff;
 }
 
 #faq-dropdown-questions {
@@ -195,7 +287,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #000;
+    background: #197371;
     padding-bottom: 15px;
     border-radius: 15px;
 }
@@ -268,76 +360,6 @@ svg {
         transform: translateY(0px);
     }
 }
-/* councilling */
-#councilling-offered {
-    justify-content: space-evenly;
-    padding-top: 10px;
-    margin-bottom: 10px;
-}
-
-#active {
-    font-size: 1.25rem;
-    color: #045649;
-}
-
-/* in person */
-#location {
-    display: flex;
-    flex-direction: column;
-}
-
-#header-container h2 {
-    color: #045649;
-}
-
-#address-h3 {
-    color: #000000;
-}
-
-#address-p {
-    font-size: 1.25rem;
-    margin-bottom: 10px;
-}
-
-#img-container {
-    width: 100%;
-    padding: 25px;
-}
-
-#location-img {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    width: 85%;
-    border-radius: 25px;
-}
-
-#contact-info {
-    padding-bottom: 15px;
-}
-
-/* online */
-#first-section {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-#header-online h2 {
-    color: #045649;
-}
-
-#img-online {
-    display: flex;
-}
-
-#img-online img {
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 15px;
-    border-radius: 50px;
-}
-
 /* faq */
 #faq-header {
     font-size: 2rem;
