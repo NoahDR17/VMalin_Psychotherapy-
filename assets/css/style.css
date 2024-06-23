@@ -290,6 +290,8 @@ main {
     background: #197371;
     padding-bottom: 15px;
     border-radius: 15px;
+    margin-bottom: 35px;
+
 }
 
 #faq-dropdown-questions p {
@@ -416,6 +418,54 @@ th {
     border-radius: 30px;
 }
 
+footer {
+    background-color: #197371;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+footer #contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 85%;
+    background-color: #197371;
+    padding: 10px;
+}
+#contact-info i {
+    color: #f6fcef;
+    padding-right: 5px;
+}
+#address, #phone-number, #email {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.65rem;
+    color: #f6fcef;
+}
+#address, #phone-number {
+    padding-bottom: 15px;
+}
+#social-div {
+    display: flex;
+    flex-direction: column;
+    background-color: #197371;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#contact-footer {
+    color: #f6fcef;
+    font-size: 0.8rem;
+}
+#social-links {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+#social-links i {
+    color: #f6fcef;
+    padding: 0 10px;
+}
 /* Tablets */
 @media screen and (min-width: 768px) {
 
