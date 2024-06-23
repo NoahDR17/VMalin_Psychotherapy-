@@ -147,6 +147,7 @@ main {
     justify-content: center;
     height: 90%;
     font-size: 1.5rem;
+    color: #f6fcef;
 }
 
 /* About section */
@@ -316,10 +317,12 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+
 }
 
 .question h3 {
     font-size: 1rem;
+    color: #f6fcef;
 }
 
 .answer {
@@ -333,6 +336,7 @@ main {
     padding: 10px;
     line-height: 1.6;
     font-size: 1rem;
+    color: #f6fcef;
 }
 
 .answer li {
@@ -386,7 +390,8 @@ td {
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #197371;
+    color: #f6fcef;
 }
 
 /* about page external */
@@ -432,39 +437,37 @@ footer #contact-info {
     background-color: #197371;
     padding: 10px;
 }
-#contact-info i {
+footer #contact-info i {
     color: #f6fcef;
     padding-right: 5px;
+    font-size: 15px;
 }
-#address, #phone-number, #email {
+footer #address, #phone-number, #email {
     display: flex;
     flex-direction: row;
-    font-size: 0.65rem;
+    font-size: 0.8rem;
     color: #f6fcef;
 }
-#address, #phone-number {
+#address {
+    align-items: center;
+}
+footer #address, #phone-number {
     padding-bottom: 15px;
 }
-#social-div {
+footer #social-div {
+    background-color: #197371;
+}
+footer #social-links {
     display: flex;
     flex-direction: column;
-    background-color: #197371;
-    width: 50%;
-    align-items: center;
-    justify-content: space-evenly;
-}
-#contact-footer {
-    color: #f6fcef;
-    font-size: 0.8rem;
-}
-#social-links {
-    display: flex;
-    flex-direction: row;
     list-style-type: none;
 }
-#social-links i {
+footer #social-links i {
     color: #f6fcef;
-    padding: 0 10px;
+    font-size: 25px;
+}
+footer #facebook {
+    padding-bottom: 25px;
 }
 /* Tablets */
 @media screen and (min-width: 768px) {
