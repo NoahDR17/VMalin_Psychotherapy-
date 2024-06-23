@@ -388,6 +388,12 @@ th {
 }
 
 /* about page external */
+#about-external {
+    background-color: #f6fcef;
+}
+#about-external p {
+    color: #045649;
+}
 .about-title {
     display: flex;
     align-items: center;
@@ -398,12 +404,12 @@ th {
 .about-title h1 {
     font-size: 1.5rem;
     margin-top: 30px;
-    color: #000;
+    color: #045649;
 }
 .about-title h3 {
     font-size: 1.25rem;
     margin-top: 20px;
-    color: #000;
+    color: #045649;
 }
 #victoria-img {
     width: 50%;
