@@ -399,7 +399,7 @@ th {
     background-color: #f6fcef;
 }
 #about-external p {
-    color: #045649;
+    color: #0f474d;
 }
 .about-title {
     display: flex;
@@ -411,7 +411,7 @@ th {
 .about-title h1 {
     font-size: 1.5rem;
     margin-top: 30px;
-    color: #045649;
+    color: #0f474d;
 }
 .about-title h3 {
     font-size: 1.25rem;
@@ -426,8 +426,12 @@ th {
 footer {
     background-color: #197371;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
+}
+#footer-container {
+    display: flex;
+    flex-direction: row;
 }
 footer #contact-info {
     display: flex;
